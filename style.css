@@ -1,6 +1,17 @@
 body, html {
     height: 100%;
     font-family: Montserrat, sans-serif; /* Titels */
+    line-height: 1.25;
+
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* puts it behind content */
     background: linear-gradient(to right top, #000000, #2e2e2e,
     #585858, #878787, #b9b9b9, #b9b9b9, #b9b9b9,
     #b9b9b9, #878787, #585858, #2e2e2e, #000000);
@@ -8,5 +19,127 @@ body, html {
 
 p {
     font-family: "Source Sans Pro", sans-serif; /* Regular texts */
+    font-size: 1.2rem;
 }
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    //background-color: rgba(179, 179, 179, 0.1); /* 10% opacity */
+    height: 70px;
+    align-content: center;
+}
+
+
+.navbar {
+    max-width: 1260px;
+    margin: 0 auto;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    text-align: right;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+
+}
+
+img {
+    padding: 0;
+    margin: 0;
+    height: 35px;
+    width: 35px;
+}
+
+.home {
+    min-height: 100vh;
+    align-content: center;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 5.5rem;
+}
+
+.intro, .planning, .ontwikkeling, .logboek, .rollen, .roles {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+
+
+
+.ontwikkeling {
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+.planning-body {
+    max-height: 100vh;
+    background: linear-gradient(to right top, #000000, #2e2e2e,
+    #585858, #878787, #b9b9b9, #b9b9b9, #b9b9b9,
+    #b9b9b9, #878787, #585858, #2e2e2e, #000000);
+    //background: linear-gradient(to top, #000000, #2e2e2e, #585858, #878787, #b9b9b9, #b9b9b9, #b9b9b9, #b9b9b9, #878787, #585858, #2e2e2e, #000000);
+
+}
+
+.planning {
+    text-align: center;
+}
+
+
+.planning img {
+    width: 600px;
+    height: auto;
+    //margin: 10px 0;
+}
+
+.planning-container {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+}
+
+.roles {
+    text-align: center;
+}
+
+
+iframe {
+    width: 800px;
+    height: 500px;
+
+}
+
+
+footer {
+    display: flex;
+    padding: 160px 150px 10px 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
 

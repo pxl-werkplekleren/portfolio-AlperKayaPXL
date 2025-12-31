@@ -1,0 +1,12 @@
+body, html {
+    height: 100%;
+    font-family: Montserrat, sans-serif; /* Titels */
+    background: linear-gradient(to right top, #000000, #2e2e2e,
+    #585858, #878787, #b9b9b9, #b9b9b9, #b9b9b9,
+    #b9b9b9, #878787, #585858, #2e2e2e, #000000);
+}
+
+p {
+    font-family: "Source Sans Pro", sans-serif; /* Regular texts */
+}
+

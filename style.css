@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body, html {
     height: 100%;
     font-family: Montserrat, sans-serif; /* Titels */
@@ -102,15 +109,23 @@ header {
 
 
 
-.intro, .planning, .ontwikkeling, .logboek, .rollen, .roles {
+.intro-inner, .planning, .ontwikkeling-inner, .logboek-en-rollen-inner, .roles {
     max-width: 1260px;
     margin: 0 auto;
     padding-top: 70px;
 }
 
-.intro {
+.ontwikkeling {
+    background-image: url("assets/intro-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 
-    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .intro p {
@@ -118,18 +133,35 @@ header {
 }
 
 
-.logboek, .rollen {
+.intro, .logboek, .rollen, .ontwikkeling {
+    min-height: 100vh;
+}
+
+.logboek-inner , .rollen-inner {
     display: flex;
     flex-direction: column;
 }
 
 
 
-.ontwikkeling {
+.logboek-en-rollen {
+
+    background-image: url("assets/logboek-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     text-align: left;
-    display: flex;
     //justify-content: flex-end;
 }
+
+.logboek-en-rollen-inner {
+    display: flex;
+    padding: 20px 20px 0 20px;
+    justify-content: space-between;
+}
+
+
 
 
 
@@ -169,17 +201,22 @@ header {
     text-align: center;
 }
 
+.homepage-iframe {
+    width: 600px;
+    height: 500px;
+}
+
 
 iframe {
-    width: 800px;
-    height: 500px;
+    width: 1200px;
+    height: 710px;
 
 }
 
 
 footer {
     display: flex;
-    padding: 160px 150px 10px 150px;
+    padding: 60px 150px 10px 150px;
     justify-content: space-between;
     align-items: center;
 }

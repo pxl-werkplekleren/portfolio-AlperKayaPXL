@@ -115,12 +115,17 @@ header {
     padding-top: 70px;
 }
 
-.ontwikkeling {
+
+.intro {
     background-image: url("assets/intro-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+}
+
+.ontwikkeling {
+
 
     height: 100%;
     width: 100%;
@@ -212,6 +217,58 @@ iframe {
     height: 710px;
 
 }
+
+
+/*
+OPDRACHTEN PAGE
+OPDRACHTEN PAGE
+OPDRACHTEN PAGINA BEGINT HIER
+*/
+.opdrachten-home {
+    min-height: 100vh;
+    text-align: center;
+    align-content: center;
+}
+
+.opdrachten-home h1 {
+    font-size: 4rem;
+}
+
+.opdrachten-content {
+    padding-top: 50px;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+li::marker {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.opdrachten-content ol li {
+    padding-top: 50px;
+}
+
+.opdrachten-content ol li p {
+    font-size: 16px;
+}
+
+.opdrachten-content ol li h4 {
+    font-size: 1rem;
+    //font-family: "Source Sans Pro", sans-serif;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.periode {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+
+
+
 
 
 footer {

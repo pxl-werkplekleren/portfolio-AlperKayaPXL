@@ -9,6 +9,7 @@ body, html {
     height: 100%;
     font-family: Montserrat, sans-serif; /* Titels */
     line-height: 1.5;
+    scroll-behavior: smooth;
 
 }
 
@@ -106,16 +107,6 @@ header {
     color: #2e2e2e;
 }
 
-
-
-
-.intro-inner, .planning, .ontwikkeling-inner, .logboek-en-rollen-inner, .roles {
-    max-width: 1260px;
-    margin: 0 auto;
-    padding-top: 70px;
-}
-
-
 .intro {
     background-image: url("assets/intro-background.jpg");
     background-repeat: no-repeat;
@@ -124,13 +115,45 @@ header {
     background-position: center;
 }
 
-.ontwikkeling {
 
+
+
+.intro-inner, .planning, .ontwikkeling-inner, .logboek-en-rollen-inner, .roles {
+    max-width: 1260px;
+    margin: 0 auto;
+    //padding-top: 70px;
+}
+
+
+.intro-inner {
+    min-height: 80vh;
+    padding-top: 100px;
+}
+
+.ontwikkeling {
+    max-width: 1260px;
+    margin: 0 auto;
 
     height: 100%;
     width: 100%;
     padding: 0;
-    margin: 0;
+}
+
+.ontwikkeling-inner {
+    padding-top: 70px;
+}
+
+
+.ontwikkeling ul li {
+    list-style: none;
+    font-weight: bold;
+   // font-family: "Source Sans Pro", sans-serif;
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+.ontwikkeling p {
+    font-size: 1.1rem;
 }
 
 .intro p {
@@ -138,7 +161,7 @@ header {
 }
 
 
-.intro, .logboek, .rollen, .ontwikkeling {
+.logboek, .rollen, .ontwikkeling {
     min-height: 100vh;
 }
 
@@ -147,17 +170,41 @@ header {
     flex-direction: column;
 }
 
+.rollen {
+    padding-top: 100px;
+    max-width: 1260px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rollen h1{
+    text-align: left;
+    padding-bottom: 50px;
+
+}
+
+.rollen iframe {
+}
 
 
-.logboek-en-rollen {
-
-    background-image: url("assets/logboek-background.jpg");
+.rollen-content {
+    background-image: url("assets/intro-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    text-align: left;
-    //justify-content: flex-end;
+}
+
+.rollen-vragen {
+    padding-top: 100px;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+
+
+.logboek-en-rollen {
+
 }
 
 .logboek-en-rollen-inner {
@@ -179,21 +226,59 @@ header {
 
 .planning-body {
     max-height: 100vh;
-    background: linear-gradient(to right top, #000000, #2e2e2e,
+    /*background: linear-gradient(to right top, #000000, #2e2e2e,
     #585858, #878787, #b9b9b9, #b9b9b9, #b9b9b9,
-    #b9b9b9, #878787, #585858, #2e2e2e, #000000);
+    #b9b9b9, #878787, #585858, #2e2e2e, #000000);*/
     //background: linear-gradient(to top, #000000, #2e2e2e, #585858, #878787, #b9b9b9, #b9b9b9, #b9b9b9, #b9b9b9, #878787, #585858, #2e2e2e, #000000);
 
 }
 
 .planning {
     text-align: center;
+    min-height: 100vh;
+    align-items: center;
+    align-content: center;
 }
 
+.planning h1 {
+    font-size: 4rem;
+}
+
+.logboek {
+    min-height: 100vh;
+    max-width:1260px;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.logboek iframe {
+    width: 900px;
+    height: 600px;
+}
+
+.logboek h1 {
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.logboek-content {
+    background-image: url("assets/intro-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.logboek-vragen {
+    padding-top: 100px;
+    max-width: 1260px;
+    margin: 0 auto;
+}
 
 .planning img {
     width: 600px;
-    height: auto;
+    height: 400px;
     //margin: 10px 0;
 }
 
@@ -202,8 +287,19 @@ header {
     grid-template-columns: repeat(1, 2fr);
 }
 
+.rollen-pagina {
+
+
+}
+
 .roles {
     text-align: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.roles h1 {
+    font-size: 4rem;
 }
 
 .homepage-iframe {
@@ -213,8 +309,8 @@ header {
 
 
 iframe {
-    width: 1200px;
-    height: 710px;
+    width: 900px;
+    height: 600px;
 
 }
 
@@ -234,7 +330,16 @@ OPDRACHTEN PAGINA BEGINT HIER
     font-size: 4rem;
 }
 
+.opdrachten-main {
+    background-image: url("assets/intro-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 .opdrachten-content {
+
     padding-top: 50px;
     max-width: 1260px;
     margin: 0 auto;
@@ -273,9 +378,17 @@ li::marker {
 
 footer {
     display: flex;
-    padding: 60px 150px 10px 150px;
+    padding: 0 150px 10px 150px;
     justify-content: space-between;
     align-items: center;
+}
+
+footer a {
+    cursor: pointer;
+}
+
+footer a:hover {
+    transform: scale(1.03);
 }
 
 

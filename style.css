@@ -68,18 +68,24 @@ header {
 .menu {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.1rem;
 }
 
 .menu a {
     text-decoration: none;
-    color: black;
-    font-weight: 500;
+    color: white;
+    font-size: 1.1rem;
+    }
+
+.active {
+        border-bottom: 2px solid indianred;
+
 }
 
 .navbar a:hover {
-    text-decoration: underline;
-
+    border-bottom: 1px solid #666666;
+    transition: .3s;
+    transform: scale(1.01);
 }
 
 .menu img {
@@ -97,14 +103,52 @@ header {
     padding-bottom: 40px;
 }
 
-.titel h1 {
-    font-size: 5.5rem;
-    margin: 0;
+h1 {
+    color: indianred;
+
 }
 
-.titel h2 {
+
+
+
+.titelh1 {
+    font-size: 5.5rem;
+    margin: 0;
+    color: black;
+
+}
+.titelh1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: indianred;
+    margin: 15px auto 0 auto;
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+.home .titelh1 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    color: black; /* donkere accentkleur */
+    letter-spacing: 10px;
+}
+
+.home h2 {
     font-size: 2rem;
-    color: #2e2e2e;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.home h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+    color: #555;
+    font-style: italic;
 }
 
 .intro {
@@ -113,7 +157,17 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    /*
+    background: #f0f0f0;
+    background: linear-gradient(90deg, rgba(240, 240, 240, 1) 60%, rgba(255, 255, 255, 1) 97%);
+    background-image: url("assets/intro-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;*/
 }
+
+
 
 
 
@@ -126,17 +180,27 @@ header {
 
 
 .intro-inner {
-    min-height: 80vh;
     padding-top: 100px;
+    min-height: 100vh;
+}
+
+.intro-inner h1 {
+    padding-bottom: 20px;
+}
+
+.jaartal {
+    text-align: center;
+    padding-bottom: 200px;
+    font-size: 3rem;
 }
 
 .ontwikkeling {
+    min-height: 100vh;
     max-width: 1260px;
     margin: 0 auto;
 
     height: 100%;
     width: 100%;
-    padding: 0;
 }
 
 .ontwikkeling-inner {
@@ -150,18 +214,71 @@ header {
    // font-family: "Source Sans Pro", sans-serif;
     font-size: 22px;
     padding-top: 20px;
+    color: #b9b9b9;
 }
 
 .ontwikkeling p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .intro p {
     width: 1000px;
 }
 
+.reflectie {
+    min-height: 100vh;
+    padding-top: 100px;
+    max-width: 1260px;
+    margin: 0 auto;
+}
 
-.logboek, .rollen, .ontwikkeling {
+.reflectie p {
+    padding-top: 20px;
+    font-size: 1.2rem;
+}
+
+
+.kernkwadranten {
+    min-height: 100vh;
+    padding-top: 100px;
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+
+
+.kwadrant-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1rem;
+    margin: 0;
+    padding: 20px 0;
+    width: 600px;
+}
+
+.kwadrant {
+    border: 2px solid #000;
+    padding: 1rem;
+    width: 300px;
+}
+
+.kwadrant-vak h2 {
+}
+
+.kwadrant h3 {
+    margin-top: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.kwadrant-tekst {
+    padding-top: 20px;
+}
+
+
+
+.logboek, .rollen {
     min-height: 100vh;
 }
 
@@ -181,9 +298,6 @@ header {
     text-align: left;
     padding-bottom: 50px;
 
-}
-
-.rollen iframe {
 }
 
 
@@ -225,6 +339,11 @@ header {
 
 
 .planning-body {
+    background-image: url("assets/intro-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     max-height: 100vh;
     /*background: linear-gradient(to right top, #000000, #2e2e2e,
     #585858, #878787, #b9b9b9, #b9b9b9, #b9b9b9,
@@ -234,6 +353,7 @@ header {
 }
 
 .planning {
+
     text-align: center;
     min-height: 100vh;
     align-items: center;
@@ -245,6 +365,7 @@ header {
 }
 
 .logboek {
+
     min-height: 100vh;
     max-width:1260px;
     margin: 0 auto;
@@ -252,9 +373,9 @@ header {
     text-align: center;
 }
 
-.logboek iframe {
-    width: 900px;
-    height: 600px;
+iframe {
+    width: 1000px;
+    height: 700px;
 }
 
 .logboek h1 {
@@ -300,18 +421,6 @@ header {
 
 .roles h1 {
     font-size: 4rem;
-}
-
-.homepage-iframe {
-    width: 600px;
-    height: 500px;
-}
-
-
-iframe {
-    width: 900px;
-    height: 600px;
-
 }
 
 
@@ -378,7 +487,7 @@ li::marker {
 
 footer {
     display: flex;
-    padding: 0 150px 10px 150px;
+    padding: 20px 150px 10px 150px;
     justify-content: space-between;
     align-items: center;
 }

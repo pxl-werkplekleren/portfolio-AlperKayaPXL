@@ -181,7 +181,7 @@ h1 {
 
 .intro-inner {
     padding-top: 100px;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .intro-inner h1 {
@@ -195,7 +195,6 @@ h1 {
 }
 
 .ontwikkeling {
-    min-height: 100vh;
     max-width: 1260px;
     margin: 0 auto;
 
@@ -214,7 +213,8 @@ h1 {
    // font-family: "Source Sans Pro", sans-serif;
     font-size: 22px;
     padding-top: 20px;
-    color: #b9b9b9;
+    //color: #b9b9b9;
+    color: #878787;
 }
 
 .ontwikkeling p {
@@ -226,7 +226,6 @@ h1 {
 }
 
 .reflectie {
-    min-height: 100vh;
     padding-top: 100px;
     max-width: 1260px;
     margin: 0 auto;
@@ -239,7 +238,6 @@ h1 {
 
 
 .kernkwadranten {
-    min-height: 100vh;
     padding-top: 100px;
     max-width: 1260px;
     margin: 0 auto;
@@ -276,6 +274,29 @@ h1 {
     padding-top: 20px;
 }
 
+.x-factor {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.x-factor h2 {
+    color: #878787;
+}
+
+.factor-list {
+    list-style: none;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.factor-list li {
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.been {
+    margin-bottom: 50px;
+}
 
 
 .logboek, .rollen {
@@ -328,8 +349,19 @@ h1 {
     padding-bottom: 20px;
 }
 
+.rol {
+    color: black;
+}
+
 .rollen-article {
     padding-bottom: 30px;
+}
+
+.rollen-article h4 {
+    font-size: 1.2rem;
+    color: #666666;
+    padding-top: 20px;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 .rol-item {
@@ -347,6 +379,24 @@ h1 {
     list-style: none;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 1.1rem;
+}
+
+
+
+.activiteit-list li {
+    font-weight: bold;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.antwoord {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.rol-voorbeelden {
+    padding-bottom: 40px;
 }
 
 .rollen-vragen {

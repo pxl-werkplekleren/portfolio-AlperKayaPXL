@@ -288,6 +288,7 @@ h1 {
 }
 
 .rollen {
+
     padding-top: 100px;
     max-width: 1260px;
     margin: 0 auto;
@@ -301,12 +302,51 @@ h1 {
 }
 
 
-.rollen-content {
+.rollen-lijst {
+    min-height: 100vh;
+    background-color: white;
+
+}
+
+.rollen-span {
     background-image: url("assets/intro-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+}
+
+.rollen-content {
+    padding-top: 100px;
+    max-width: 1260px;
+    margin: 0 auto;
+    min-height: 100vh;
+
+}
+
+.rollen-content h1 {
+    padding-bottom: 20px;
+}
+
+.rollen-article {
+    padding-bottom: 30px;
+}
+
+.rol-item {
+    font-family: "Source Sans Pro", sans-serif;
+    margin-top: 10px;
+   // padding-bottom: 10px;
+}
+
+.rol-item h3 {
+    font-weight: 500;
+}
+
+.rol-reflectie {
+    padding-bottom: 30px;
+    list-style: none;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.1rem;
 }
 
 .rollen-vragen {
@@ -339,16 +379,19 @@ h1 {
 
 
 .planning-body {
+    background-color: white;
+    /*
     background-image: url("assets/intro-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    max-height: 100vh;
+    max-height: 100vh; */
     /*background: linear-gradient(to right top, #000000, #2e2e2e,
     #585858, #878787, #b9b9b9, #b9b9b9, #b9b9b9,
     #b9b9b9, #878787, #585858, #2e2e2e, #000000);*/
     //background: linear-gradient(to top, #000000, #2e2e2e, #585858, #878787, #b9b9b9, #b9b9b9, #b9b9b9, #b9b9b9, #878787, #585858, #2e2e2e, #000000);
+
 
 }
 
